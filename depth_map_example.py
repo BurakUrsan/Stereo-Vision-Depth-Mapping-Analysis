@@ -5,9 +5,6 @@ import matplotlib.pyplot as plt
 imgL = cv2.imread('sol_goruntu.jpg', 0)
 imgR = cv2.imread('sag_goruntu.jpg', 0)
 
-# StereoBM nesnesini oluştur
-# numDisparities: Arama menzili (16'nın katı olmalı)
-# blockSize: Karşılaştırma yapılan blok boyutu (3, 5, 7... gibi tek sayılar)
 stereo = cv2.StereoBM_create(numDisparities=64, blockSize=15)
 
 # Derinlik (disparity) haritasını hesapla
